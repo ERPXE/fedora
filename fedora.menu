@@ -1,0 +1,20 @@
+MENU BEGIN FEDORA
+MENU LABEL ^Fedora 19
+# ------====> Include Menu Settings <====------
+MENU INCLUDE er/menuinc/header.module
+
+# ------====> Set Specific Page Settings <====------
+MENU BACKGROUND er/plugins/fedora/fedora.png
+
+MENU INCLUDE er/plugins/fedora/i386/fedoramain.http.menu
+MENU INCLUDE er/plugins/fedora/i386/fedoramain.nfs.menu
+MENU INCLUDE er/plugins/fedora/i386/fedoramain.online.menu
+MENU INCLUDE er/plugins/fedora/i386/fedoramain.menu
+MENU INCLUDE er/plugins/fedora/x86_64/fedoramain.http.menu
+MENU INCLUDE er/plugins/fedora/x86_64/fedoramain.nfs.menu
+MENU INCLUDE er/plugins/fedora/x86_64/fedoramain.online.menu
+MENU INCLUDE er/plugins/fedora/x86_64/fedoramain.menu  
+
+# ------====> Back <====------
+include er/menu/shared/menu-back.module
+MENU END

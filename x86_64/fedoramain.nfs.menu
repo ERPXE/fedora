@@ -1,0 +1,17 @@
+LABEL FEDORA64NFS
+MENU LABEL ^Fedora x64 NFS Install
+KERNEL er/plugins/fedora/x86_64/vmlinuz
+INITRD er/plugins/fedora/x86_64/initrd.img
+APPEND ramdisk_size=100000 ip=dhcp repo=nfs:10.0.0.1:/tftpboot/er/shares/fedora/19/x86_64
+TEXT HELP
+                 Fedora Installation x64.
+ENDTEXT
+
+LABEL FEDORA64VESANFS
+MENU LABEL ^Fedora x64 NFS Install (basic video)
+KERNEL er/plugins/fedora/x86_64/vmlinuz
+INITRD er/plugins/fedora/x86_64/initrd.img
+APPEND ramdisk_size=100000 ip=dhcp xdriver=vesa nomodeset repo=nfs:10.0.0.1:/tftpboot/er/shares/fedora/19/x86_64
+TEXT HELP
+                 Fedora Install VGA safe mode x64.
+ENDTEXT

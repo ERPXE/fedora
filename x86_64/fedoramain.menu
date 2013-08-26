@@ -1,0 +1,8 @@
+LABEL FEDORA64RESCUE
+MENU LABEL ^Fedora x64 Rescue installed system
+KERNEL er/plugins/fedora/x86_64/vmlinuz
+INITRD er/plugins/fedora/x86_64/initrd.img
+APPEND ramdisk_size=100000 ip=dhcp rescue
+TEXT HELP
+                 Fedora - Rescue Installed system x64.
+ENDTEXT

@@ -1,0 +1,17 @@
+LABEL FEDORA32HTTP
+MENU LABEL ^Fedora x32 HTTP Install
+KERNEL er/plugins/fedora/i386/vmlinuz
+INITRD er/plugins/fedora/i386/initrd.img
+APPEND ramdisk_size=100000 ip=dhcp repo=http://10.0.0.1/er/fedora/19/i386
+TEXT HELP
+                 Fedora Installation.
+ENDTEXT
+
+LABEL FEDORA32VESAHTTP
+MENU LABEL ^Fedora x32 HTTP Install (basic video)
+KERNEL er/plugins/fedora/i386/vmlinuz
+INITRD er/plugins/fedora/i386/initrd.img
+APPEND ramdisk_size=100000 ip=dhcp xdriver=vesa nomodeset repo=http://10.0.0.1/er/fedora/19/i386
+TEXT HELP
+                 Fedora Install VGA safe mode.
+ENDTEXT
