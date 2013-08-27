@@ -1,9 +1,6 @@
 MENU BEGIN FEDORA
+MENU TITLE Fedora 19
 MENU LABEL ^Fedora 19
-# ------====> Include Menu Settings <====------
-MENU INCLUDE er/menuinc/header.module
-
-# ------====> Set Specific Page Settings <====------
 MENU BACKGROUND er/plugins/fedora/fedora.png
 
 MENU INCLUDE er/plugins/fedora/i386/fedoramain.http.menu
